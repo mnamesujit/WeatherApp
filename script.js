@@ -116,6 +116,13 @@ const updateWeather = (res) => {
       moreInfo.style.display = "";
       weatherData.classList.add("fadeIn");
       moreInfo.classList.add("fadeIn");
-
-      container.style.height = "550px";
+      if (window.innerWidth < 400) {
+        container.style.height = "470px";
+        console.log("code Executed");
+      } else {
+        container.style.height = "550px";
+      }
+      
+      console.log(window.innerWidth)
+  
 }

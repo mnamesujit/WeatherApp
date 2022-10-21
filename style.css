@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;0,900;1,400&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     border: none;
     outline: none;
+    font-family: 'Lato', sans-serif;
+
     
 }
 :root {
@@ -57,7 +60,7 @@ body{
 .search-box input{
     color: var(--dark);
     width: 80%;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 2.4rem;
     padding-left: 1rem;
     margin: 0 1rem;
@@ -189,15 +192,16 @@ body{
 .more-info span{
     color: var(--light-dark);
     font-size: 2.2rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .footer{
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 3.2rem;
 }
 .footer p{
     font-size: 1.5rem;
+    font-weight: 500;
    
 }
 
@@ -207,12 +211,21 @@ body{
         height: 60px;
         padding: 10px 20px;
     }
+    .weather-data .temperature{
+        font-size: 3.5rem;
+    }
     .search-box input{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .search-box button{
         width: 4rem;
         height: 4rem;
 
+    }
+    .more-info i{
+        font-size: 1.6rem;
+    }
+    .more-info span{
+    font-size: 1.6rem;
     }
 }
