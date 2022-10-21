@@ -55,6 +55,7 @@ const fetchData = (url) => {
 }
 
 const updateWeather = (res) => {
+    console.log(res)
           if (res.cod === "404") {
         container.style.height = "400px";
 
@@ -117,12 +118,11 @@ const updateWeather = (res) => {
       weatherData.classList.add("fadeIn");
       moreInfo.classList.add("fadeIn");
       if (window.innerWidth < 400) {
-        container.style.height = "470px";
+        container.style.height = "480px";
         console.log("code Executed");
-      } else {
+      }
+      else {
         container.style.height = "550px";
       }
-      
-      console.log(window.innerWidth)
   
 }
